@@ -9,9 +9,14 @@ const options = {
       description: "REST API for Blog Management",
     },
     servers: [
-      {
-        url: process.env.BASE_URL || "http://localhost:5000",
-      },
+        {
+            url: "http://localhost:5000",
+            description: "Local Development Server",
+        },
+        {
+            url: "https://blog-api-yu4n.onrender.com",
+            description: "Production Server",
+        },
     ],
   },
 
